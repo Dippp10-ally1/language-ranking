@@ -1,17 +1,17 @@
-name: Star repos - Account 3
+name: Star repos - Account 4
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 21 * * *"   # 9:00 PM
+    - cron: "0 0 * * *"    # 12:00 AM
 
 jobs:
   star-repos:
     runs-on: ubuntu-latest
 
     env:
-      TOKEN: ${{ secrets.STAR_TOKEN_3 }}
-      REPO_FILE: repos_to_star_3.txt
+      TOKEN: ${{ secrets.STAR_TOKEN_4 }}
+      REPO_FILE: repos_to_star_4.txt
 
     steps:
       - name: Checkout repository
