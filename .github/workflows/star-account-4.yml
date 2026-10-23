@@ -3,7 +3,7 @@ name: Star repos - Account 4
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"    # 12:00 AM
+    - cron: "15 17 * * *"    # 9:15 PM Oman time (UTC+4)
 
 jobs:
   star-repos:
